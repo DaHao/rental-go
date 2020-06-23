@@ -1,11 +1,26 @@
+// @flow
 import React, { Component } from 'react';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { LatLngTuple } from 'leaflet'; 
 
+const defaultLatLng: LatLngTuple = [48.865572, 2.283523];
+const zoom:number = 8;
+
+const LeafletMap:React.FC = () => {
+   return (
+     <Map>
+
+     </Map>
+   )
+}
+export default LeafletMap;
+/*
 type State = {
   lat: number,
   lng: number,
   zoom: number,
 };
+
 
 export default class HouseMap extends Component<{}, State> {
   const position = [this.state.lat, this.state.lng];
@@ -23,3 +38,4 @@ export default class HouseMap extends Component<{}, State> {
   </Map>
   );
 };
+ */
